@@ -9,7 +9,7 @@ HunterGate(
     SHA1 "91125b6ac0df9be4c2b7a5695e58d94a0e8a74e3"
 )
 
-project(ICU VERSION 63.1 LANGUAGES C CXX ASM)
+project(ICU VERSION 67.1 LANGUAGES C CXX ASM)
 
 set(CMAKE_CXX_STANDARD 11 CACHE STRING "Default C++ standard")
 
