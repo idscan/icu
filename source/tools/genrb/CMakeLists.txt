@@ -1,6 +1,6 @@
 add_executable(
     genrb
-    derb.cpp
+    errmsg.c
     errmsg.h
     filterrb.cpp
     filterrb.h
@@ -10,11 +10,15 @@ add_executable(
     parse.h
     prscmnts.cpp
     prscmnts.h
+    rbutil.c
     rbutil.h
+    read.c
     read.h
     reslist.cpp
     reslist.h
+    rle.c
     rle.h
+    ustr.c
     ustr.h
     wrtjava.cpp
     wrtxml.cpp
