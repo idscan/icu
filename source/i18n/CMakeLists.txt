@@ -24,24 +24,44 @@ add_library(
     coleitr.cpp
     coll.cpp
     collation.cpp
+    collation.h
     collationbuilder.cpp
+    collationbuilder.h
     collationcompare.cpp
+    collationcompare.h
     collationdata.cpp
+    collationdata.h
     collationdatabuilder.cpp
+    collationdatabuilder.h
     collationdatareader.cpp
+    collationdatareader.h
     collationdatawriter.cpp
+    collationdatawriter.h
     collationfastlatin.cpp
+    collationfastlatin.h
     collationfastlatinbuilder.cpp
+    collationfastlatinbuilder.h
     collationfcd.cpp
+    collationfcd.h
     collationiterator.cpp
+    collationiterator.h
     collationkeys.cpp
+    collationkeys.h
     collationroot.cpp
+    collationroot.h
     collationrootelements.cpp
+    collationrootelements.h
     collationruleparser.cpp
+    collationruleparser.h
     collationsets.cpp
+    collationsets.h
     collationsettings.cpp
+    collationsettings.h
     collationtailoring.cpp
+    collationtailoring.h
     collationweights.cpp
+    collationweights.h
+    collunsafe.h
     compactdecimalformat.cpp
     coptccal.cpp
     coptccal.h
@@ -69,22 +89,36 @@ add_library(
     currpinf.cpp
     currunit.cpp
     dangical.cpp
+    dangical.h
     datefmt.cpp
     dayperiodrules.cpp
+    dayperiodrules.h
     dcfmtsym.cpp
     decContext.cpp
     decContext.h
+    decimfmt.cpp
     decNumber.cpp
     decNumber.h
     decNumberLocal.h
-    decimfmt.cpp
-    double-conversion-bignum-dtoa.cpp
+    double-conversion.h
     double-conversion-bignum.cpp
+    double-conversion-bignum.h
+    double-conversion-bignum-dtoa.cpp
+    double-conversion-bignum-dtoa.h
     double-conversion-cached-powers.cpp
-    double-conversion-diy-fp.cpp
+    double-conversion-cached-powers.h
+    double-conversion-diy-fp.h
+    double-conversion-double-to-string.cpp
+    double-conversion-double-to-string.h
     double-conversion-fast-dtoa.cpp
+    double-conversion-fast-dtoa.h
+    double-conversion-ieee.h
+    double-conversion-string-to-double.cpp
+    double-conversion-string-to-double.h
     double-conversion-strtod.cpp
-    double-conversion.cpp
+    double-conversion-strtod.h
+    double-conversion-utils.h
+    dt_impl.h
     dtfmtsym.cpp
     dtitv_impl.h
     dtitvfmt.cpp
@@ -93,13 +127,21 @@ add_library(
     dtptngen_impl.h
     dtrule.cpp
     erarules.cpp
+    erarules.h
     esctrn.cpp
     esctrn.h
     ethpccal.cpp
     ethpccal.h
     fmtable.cpp
     fmtable_cnv.cpp
+    fmtableimp.h
     format.cpp
+    formatted_string_builder.cpp
+    formatted_string_builder.h
+    formattedval_impl.h
+    formattedval_iterimpl.cpp
+    formattedval_sbimpl.cpp
+    formattedvalue.cpp
     fphdlimp.cpp
     fphdlimp.h
     fpositer.cpp
@@ -122,6 +164,8 @@ add_library(
     listformatter.cpp
     measfmt.cpp
     measunit.cpp
+    measunit_extra.cpp
+    measunit_impl.h
     measure.cpp
     msgfmt.cpp
     msgfmt_impl.h
@@ -140,43 +184,75 @@ add_library(
     nultrans.cpp
     nultrans.h
     number_affixutils.cpp
+    number_affixutils.h
     number_asformat.cpp
+    number_asformat.h
     number_capi.cpp
     number_compact.cpp
+    number_compact.h
     number_currencysymbols.cpp
+    number_currencysymbols.h
     number_decimalquantity.cpp
+    number_decimalquantity.h
     number_decimfmtprops.cpp
+    number_decimfmtprops.h
+    number_decnum.h
     number_fluent.cpp
     number_formatimpl.cpp
+    number_formatimpl.h
     number_grouping.cpp
     number_integerwidth.cpp
     number_longnames.cpp
+    number_longnames.h
     number_mapper.cpp
+    number_mapper.h
+    number_microprops.h
     number_modifiers.cpp
+    number_modifiers.h
     number_multiplier.cpp
+    number_multiplier.h
     number_notation.cpp
+    number_output.cpp
     number_padding.cpp
     number_patternmodifier.cpp
+    number_patternmodifier.h
     number_patternstring.cpp
+    number_patternstring.h
     number_rounding.cpp
+    number_roundingutils.h
     number_scientific.cpp
+    number_scientific.h
     number_skeletons.cpp
-    number_stringbuilder.cpp
+    number_skeletons.h
+    number_types.h
     number_utils.cpp
+    number_utils.h
+    number_utypes.h
     numfmt.cpp
     numparse_affixes.cpp
+    numparse_affixes.h
     numparse_compositions.cpp
+    numparse_compositions.h
     numparse_currency.cpp
+    numparse_currency.h
     numparse_decimal.cpp
+    numparse_decimal.h
     numparse_impl.cpp
+    numparse_impl.h
     numparse_parsednumber.cpp
     numparse_scientific.cpp
-    numparse_stringsegment.cpp
+    numparse_scientific.h
     numparse_symbols.cpp
+    numparse_symbols.h
+    numparse_types.h
+    numparse_utils.h
     numparse_validators.cpp
+    numparse_validators.h
     numrange_fluent.cpp
     numrange_impl.cpp
+    numrange_impl.h
     numsys.cpp
+    numsys_impl.h
     olsontz.cpp
     olsontz.h
     persncal.cpp
@@ -187,6 +263,7 @@ add_library(
     quant.cpp
     quant.h
     quantityformatter.cpp
+    quantityformatter.h
     rbnf.cpp
     rbt.cpp
     rbt.h
@@ -209,6 +286,7 @@ add_library(
     regextxt.cpp
     regextxt.h
     region.cpp
+    region_impl.h
     reldatefmt.cpp
     reldtfmt.cpp
     reldtfmt.h
@@ -219,15 +297,25 @@ add_library(
     rulebasedcollator.cpp
     scientificnumberformatter.cpp
     scriptset.cpp
+    scriptset.h
     search.cpp
     selfmt.cpp
     selfmtimpl.h
     sharedbreakiterator.cpp
+    sharedbreakiterator.h
+    sharedcalendar.h
+    shareddateformatsymbols.h
+    sharednumberformat.h
+    sharedpluralrules.h
     simpletz.cpp
     smpdtfmt.cpp
     smpdtfst.cpp
+    smpdtfst.h
     sortkey.cpp
     standardplural.cpp
+    standardplural.h
+    string_segment.cpp
+    string_segment.h
     strmatch.cpp
     strmatch.h
     strrepl.cpp
@@ -252,8 +340,10 @@ add_library(
     tridpars.h
     tzfmt.cpp
     tzgnames.cpp
+    tzgnames.h
     tznames.cpp
     tznames_impl.cpp
+    tznames_impl.h
     tzrule.cpp
     tztrans.cpp
     ucal.cpp
@@ -270,6 +360,7 @@ add_library(
     udatpg.cpp
     ufieldpositer.cpp
     uitercollationiterator.cpp
+    uitercollationiterator.h
     ulistformatter.cpp
     ulocdata.cpp
     umsg.cpp
@@ -293,7 +384,9 @@ add_library(
     uspoof_impl.h
     usrchimp.h
     utf16collationiterator.cpp
+    utf16collationiterator.h
     utf8collationiterator.cpp
+    utf8collationiterator.h
     utmscale.cpp
     utrans.cpp
     vtzone.cpp

@@ -7,11 +7,13 @@ add_library(
     brkeng.h
     brkiter.cpp
     bytesinkutil.cpp
+    bytesinkutil.h
     bytestream.cpp
     bytestrie.cpp
     bytestriebuilder.cpp
     bytestrieiterator.cpp
     caniter.cpp
+    capi_helper.h
     characterproperties.cpp
     chariter.cpp
     charstr.cpp
@@ -20,6 +22,7 @@ add_library(
     cmemory.h
     cpputils.h
     cstr.cpp
+    cstr.h
     cstring.cpp
     cstring.h
     cwchar.cpp
@@ -27,6 +30,7 @@ add_library(
     dictbe.cpp
     dictbe.h
     dictionarydata.cpp
+    dictionarydata.h
     dtintrv.cpp
     edits.cpp
     errorcode.cpp
@@ -37,31 +41,47 @@ add_library(
     icuplug.cpp
     icuplugimp.h
     loadednormalizer2impl.cpp
+    localebuilder.cpp
+    localematcher.cpp
+    localeprioritylist.cpp
+    localeprioritylist.h
     localsvc.h
     locavailable.cpp
     locbased.cpp
     locbased.h
     locdispnames.cpp
+    locdistance.cpp
+    locdistance.h
     locdspnm.cpp
     locid.cpp
     loclikely.cpp
+    loclikelysubtags.cpp
+    loclikelysubtags.h
     locmap.cpp
     locmap.h
     locresdata.cpp
     locutil.cpp
     locutil.h
+    lsr.cpp
+    lsr.h
+    messageimpl.h
     messagepattern.cpp
     msvcres.h
     mutex.h
+    norm2_nfc_data.h
+    norm2allmodes.h
     normalizer2.cpp
     normalizer2impl.cpp
     normalizer2impl.h
     normlzr.cpp
     parsepos.cpp
     patternprops.cpp
+    patternprops.h
     pluralmap.cpp
+    pluralmap.h
     propname.cpp
     propname.h
+    propname_data.h
     propsvec.cpp
     propsvec.h
     punycode.cpp
@@ -70,6 +90,7 @@ add_library(
     putilimp.h
     rbbi.cpp
     rbbi_cache.cpp
+    rbbi_cache.h
     rbbidata.cpp
     rbbidata.h
     rbbinode.cpp
@@ -87,6 +108,9 @@ add_library(
     resbund.cpp
     resbund_cnv.cpp
     resource.cpp
+    resource.h
+    restrace.cpp
+    restrace.h
     ruleiter.cpp
     ruleiter.h
     schriter.cpp
@@ -101,9 +125,11 @@ add_library(
     servrbf.cpp
     servslkf.cpp
     sharedobject.cpp
+    sharedobject.h
     simpleformatter.cpp
     sprpimpl.h
     static_unicode_sets.cpp
+    static_unicode_sets.h
     stringpiece.cpp
     stringtriebuilder.cpp
     uarrsort.cpp
@@ -112,6 +138,7 @@ add_library(
     ubidi.cpp
     ubidi_props.cpp
     ubidi_props.h
+    ubidi_props_data.h
     ubidiimp.h
     ubidiln.cpp
     ubiditransform.cpp
@@ -120,10 +147,13 @@ add_library(
     ubrkimpl.h
     ucase.cpp
     ucase.h
+    ucase_props_data.h
     ucasemap.cpp
+    ucasemap_imp.h
     ucasemap_titlecase_brkiter.cpp
     ucat.cpp
     uchar.cpp
+    uchar_props_data.h
     ucharstrie.cpp
     ucharstriebuilder.cpp
     ucharstrieiterator.cpp
@@ -135,7 +165,6 @@ add_library(
     ucmndata.cpp
     ucmndata.h
     ucnv.cpp
-    ucnv2022.cpp
     ucnv_bld.cpp
     ucnv_bld.h
     ucnv_cb.cpp
@@ -154,6 +183,7 @@ add_library(
     ucnv_u32.cpp
     ucnv_u7.cpp
     ucnv_u8.cpp
+    ucnv2022.cpp
     ucnvbocu.cpp
     ucnvdisp.cpp
     ucnvhz.cpp
@@ -163,15 +193,19 @@ add_library(
     ucnvmbcs.h
     ucnvscsu.cpp
     ucnvsel.cpp
+    ucol_data.h
     ucol_swp.cpp
     ucol_swp.h
     ucptrie.cpp
+    ucptrie_impl.h
     ucurr.cpp
+    ucurrimp.h
     udata.cpp
     udatamem.cpp
     udatamem.h
     udataswp.cpp
     udataswp.h
+    uelement.h
     uenum.cpp
     uenumimp.h
     uhash.cpp
@@ -182,6 +216,7 @@ add_library(
     uinvchar.cpp
     uinvchar.h
     uiter.cpp
+    ulayout_props.h
     ulist.cpp
     ulist.h
     uloc.cpp
@@ -196,6 +231,7 @@ add_library(
     umutex.h
     unames.cpp
     unifiedcache.cpp
+    unifiedcache.h
     unifilt.cpp
     unifunct.cpp
     uniset.cpp
@@ -209,10 +245,12 @@ add_library(
     unistr_cnv.cpp
     unistr_props.cpp
     unistr_titlecase_brkiter.cpp
+    unistrappender.h
     unorm.cpp
     unormcmp.cpp
     unormimp.h
     uobject.cpp
+    uposixdefs.h
     uprops.cpp
     uprops.h
     ures_cnv.cpp
@@ -254,12 +292,13 @@ add_library(
     utracimp.h
     utrie.cpp
     utrie.h
+    utrie_swap.cpp
     utrie2.cpp
     utrie2.h
     utrie2_builder.cpp
     utrie2_impl.h
-    utrie_swap.cpp
     uts46.cpp
+    utypeinfo.h
     utypes.cpp
     uvector.cpp
     uvector.h
