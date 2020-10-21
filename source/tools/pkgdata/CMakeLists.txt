@@ -1,4 +1,4 @@
-add_executable(pkgdata pkgdata.cpp pkgtypes.c)
+add_executable(pkgdata pkgdata.cpp pkgtypes.c pkgtypes.h)
 
 target_link_libraries(pkgdata PUBLIC icutu icui18n icuuc)
 

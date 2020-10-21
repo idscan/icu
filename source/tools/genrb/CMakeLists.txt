@@ -1,16 +1,23 @@
 add_executable(
     genrb
-    errmsg.c
+    derb.cpp
+    errmsg.h
+    filterrb.cpp
+    filterrb.h
     genrb.cpp
+    genrb.h
     parse.cpp
-    read.c
-    reslist.cpp
-    ustr.c
-    rbutil.c
-    wrtjava.cpp
-    rle.c
-    wrtxml.cpp
+    parse.h
     prscmnts.cpp
+    prscmnts.h
+    rbutil.h
+    read.h
+    reslist.cpp
+    reslist.h
+    rle.h
+    ustr.h
+    wrtjava.cpp
+    wrtxml.cpp
 )
 
 target_link_libraries(genrb PUBLIC icutu icui18n icuuc)

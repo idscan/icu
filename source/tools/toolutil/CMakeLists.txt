@@ -1,29 +1,51 @@
 add_library(
     icutu
     collationinfo.cpp
+    collationinfo.h
     dbgutil.cpp
+    dbgutil.h
     denseranges.cpp
+    denseranges.h
     filestrm.cpp
+    filestrm.h
     filetools.cpp
+    filetools.h
     flagparser.cpp
+    flagparser.h
     package.cpp
+    package.h
     pkg_genc.cpp
+    pkg_genc.h
     pkg_gencmn.cpp
+    pkg_gencmn.h
     pkg_icu.cpp
+    pkg_icu.h
+    pkg_imp.h
     pkgitems.cpp
     ppucd.cpp
+    ppucd.h
     swapimpl.cpp
+    swapimpl.h
     toolutil.cpp
+    toolutil.h
     ucbuf.cpp
+    ucbuf.h
     ucln_tu.cpp
     ucm.cpp
+    ucm.h
     ucmstate.cpp
     udbgutil.cpp
+    udbgutil.h
     unewdata.cpp
+    unewdata.h
     uoptions.cpp
+    uoptions.h
     uparse.cpp
+    uparse.h
     writesrc.cpp
+    writesrc.h
     xmlparser.cpp
+    xmlparser.h
 )
 
 target_compile_definitions(icutu PRIVATE U_TOOLUTIL_IMPLEMENTATION)
